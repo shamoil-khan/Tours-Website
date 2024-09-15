@@ -237,7 +237,7 @@ const checkUrl = (defaultUrl) => {
   const d = `${a}#contact`;
   const e = `${a}#`;
 
-  const a2 = "file:///D:/My%20Projects/Websites/Imjex%20Tours/index.html";
+  const a2 = "https://shamoil-khan.github.io/Tours-Website/";
   const b2 = `${a2}#home`;
   const c2 = `${a2}#about`;
   const d2 = `${a2}#contact`;

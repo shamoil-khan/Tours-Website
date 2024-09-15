@@ -231,15 +231,13 @@ const errPage = document.getElementById("errPage");
 
 const checkUrl = (defaultUrl) => {
   const a = "https://shamoil-khan.github.io/Tours-Website/";
-  const a1 = "https://shamoil-khan.github.io/Tours-Website";
-  const b = `${a2}#home`;
-  const c = `${a2}#about`;
-  const d = `${a2}#contact`;
-  const e = `${a2}#`;
+  const b = `${a}#home`;
+  const c = `${a}#about`;
+  const d = `${a}#contact`;
+  const e = `${a}#`;
 
   if (
     defaultUrl === a ||
-    defaultUrl === a1 ||
     defaultUrl === b ||
     defaultUrl === c ||
     defaultUrl === d ||
@@ -247,6 +245,7 @@ const checkUrl = (defaultUrl) => {
   ) {
     errPage.classList.remove("active");
     console.log("page founded");
+    alert("page founded");
   } else {
     errPage.classList.add("active");
   }

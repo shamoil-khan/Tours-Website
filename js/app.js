@@ -263,6 +263,9 @@ const checkUrl = (defaultUrl) => {
   }
 };
 
+
+    errPage.classList.remove("active");
+
 // setInterval(() => {
 //   checkUrl(window.location.href);
 // }, 1);

@@ -230,42 +230,31 @@ packages_btn.addEventListener("click", goToPackages);
 const errPage = document.getElementById("errPage");
 
 const checkUrl = (defaultUrl) => {
-  const a = "http://127.0.0.1:5500/";
-  const aFile = `${a}index.html`;
-  const b = `${a}#home`;
-  const c = `${a}#about`;
-  const d = `${a}#contact`;
-  const e = `${a}#`;
-
-  const a2 = "https://shamoil-khan.github.io/Tours-Website/";
-  const b2 = `${a2}#home`;
-  const c2 = `${a2}#about`;
-  const d2 = `${a2}#contact`;
-  const e2 = `${a2}#`;
+  const a = "https://shamoil-khan.github.io/Tours-Website/";
+  const a1 = "https://shamoil-khan.github.io/Tours-Website";
+  const b = `${a2}#home`;
+  const c = `${a2}#about`;
+  const d = `${a2}#contact`;
+  const e = `${a2}#`;
 
   if (
-    defaultUrl === aFile ||
     defaultUrl === a ||
+    defaultUrl === a1 ||
     defaultUrl === b ||
     defaultUrl === c ||
     defaultUrl === d ||
-    defaultUrl === e ||
-    defaultUrl === a2 ||
-    defaultUrl === b2 ||
-    defaultUrl === c2 ||
-    defaultUrl === d2 ||
-    defaultUrl === e2
+    defaultUrl === e
   ) {
     errPage.classList.remove("active");
-    // console.log("page founded");
+    console.log("page founded");
   } else {
     errPage.classList.add("active");
   }
 };
 
 
-    errPage.classList.remove("active");
+    // errPage.classList.remove("active");
 
-// setInterval(() => {
-//   checkUrl(window.location.href);
-// }, 1);
+setInterval(() => {
+  checkUrl(window.location.href);
+}, 1);

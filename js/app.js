@@ -244,8 +244,7 @@ const checkUrl = (defaultUrl) => {
     defaultUrl === e
   ) {
     errPage.classList.remove("active");
-    console.log("page founded");
-    alert("page founded");
+    // console.log("page founded");
   } else {
     errPage.classList.add("active");
   }

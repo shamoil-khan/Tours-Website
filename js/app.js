@@ -263,6 +263,6 @@ const checkUrl = (defaultUrl) => {
   }
 };
 
-setInterval(() => {
-  checkUrl(window.location.href);
-}, 1);
+// setInterval(() => {
+//   checkUrl(window.location.href);
+// }, 1);

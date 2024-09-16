@@ -194,6 +194,10 @@ prevBtn.addEventListener("click", () => {
   prev();
 });
 
+setInterval(() => {
+  next()
+}, 10000);
+
 const packageLink = document.getElementById("packageLink");
 const packages_btn = document.querySelector(".packages-btn");
 
